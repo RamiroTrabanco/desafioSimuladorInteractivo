@@ -4,7 +4,6 @@ let productoB = 30000
 let productoC = 30000
 
 let verdadero = true
-let falso = false
 
 while (verdadero) {
     if(confirm("Deseas adquirir los productos?")) {
