@@ -2,9 +2,9 @@ let productoA = false
 let productoB = false
 let productoC = false
 let valorTotal = productoA + productoB + productoC
-let totalCupon = productoA + productoB + productoC * 0.9
+let totalCupon = (productoA + productoB + productoC) * 0.9
 let descuento = 0
-
+debugger
 function calcularTotal() {
     productoA = confirm("Desea adquirir este productoA?")
     if (productoA) {
@@ -25,7 +25,7 @@ function calcularTotal() {
         productoC = 0
     }
     descuento = prompt("Ingrese su cupón de descuento:")
-    if (descuento="cuponDel10") {
+    if (descuento==="cuponDel10") {
         return totalCupon
     } else {
         return valorTotal
